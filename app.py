@@ -59,7 +59,7 @@ def processRequest(req):
 
     intent = result.get("intent").get('displayName')
     
-    if (intent=='test1'):
+    if (intent=='test1 - yes'):
         answer =model.predict(context, question)
     fulfillmentText = "{} !".format(answer['answer'])
     return {
